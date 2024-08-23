@@ -1,25 +1,25 @@
-const caixaPrincipal = document.querySelector ('.caixaPrincipal');
-const caixaPergunta = document.querySelector ('.caixaPergunta');
-const caixaAlternativa = document.querySelector ('.caixaAlternativa');
-const caixaResultado = document.querySelector ('.caixaResultado');
+const caixaPrincipal = document.querySelector('.caixa-principal');
+const caixaPergunta = document.querySelector('.caixa-pergunta');
+const caixaAlternativa = document.querySelector('.caixa-alternativa');
+const caixaResultado = document.querySelector('.caixa-resultado');
 
 const perguntas = [
- {
-   enunciado: "Pergunta 1"
-   alternativas: [ [ "alternativa 1" , "alternativa 2"]
- }
- {
-   enunciado: "Pergunta 1"
-   alternativas: [ [ "alternativa 1" , "alternativa 2"]
-}
-{
-   enunciado: "Pergunta 1"
-   alternativas: [ [ "alternativa 1" , "alternativa 2"]
- }
+    {
+        enunciado: "Pergunta 1",
+        alternativas:["Alternativa 1","Alternativa 2"]
+    },
+    {
+        enunciado: "Pergunta 2",
+        alternativas:["Alternativa 1","Alternativa 2"]
+    },
+    {
+        enunciado: "Pergunta 3",
+        alternativas:["Alternativa 1","Alternativa 2"]
+    }
 ]
 
-let atual =0;
-let PerguntaAtual;
+let atual = 0;
+let perguntaAtual;
 
 function mostraPergunta(){
     
